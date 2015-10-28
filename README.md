@@ -1,2 +1,3 @@
 # Javascript-Quiz
-A simple and friendly Javascript, HTML, CSS and a little Bootstrap based online quiz. 
+A simple, dynamical and friendly online quiz about a local hip-hop band. 
+Technologies: Javascript, JSON, HTML, CSS, Bootstrap
