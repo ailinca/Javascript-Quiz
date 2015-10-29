@@ -6,6 +6,7 @@
 "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">  
 <style>
 .col-sm-6 {
+    
     padding: 10px;
 }
 .pageMovement {
@@ -55,6 +56,7 @@
     <div id="quizContent" class="row quiz">
         <div class="col-sm-12">
             <h2 id="quizHeader"></h2>
+             <img class="img-responsive" id="quizimage" src="intr1.jpg"  width="200" height="200">
         </div>
         <div id="questions" class="row">
             <div class="col-sm-6"> <a data-id="1" class="btn btn-default answer ">1</a> </div>
@@ -62,6 +64,7 @@
             <div class="col-sm-6"> <a data-id="3" class="btn btn-default answer ">3</a> </div>
             <div class="col-sm-6"> <a data-id="4" class="btn btn-default answer ">4</a> </div>
         </div>
+    
     
     <div class="row pageMovement">
         <div id="btnPrevious" class="col-xs-5 col-sm-4 btn btn-primary pull-left">Previous</div>
@@ -92,7 +95,7 @@ var lengthofobject = Object(data.quizcontent).length;
 var curPage = 0, numOfCorrect = 0;
 var myAnswers = [];
 
-
+var newimage = document.getElementById("quizimage");
 var myHeader = document.getElementById("quizHeader");
 var classname = document.getElementsByClassName("answer");
 var myQuestion = document.getElementById("questions");
@@ -204,6 +207,7 @@ function checkPage(i) {
    }
    
    myHeader.innerHTML = data.quizcontent[curPage].question;
+   newimage.src = data.quizcontent[curPage].image;
    for (var i = 0; i < myQuestion.children.length; i++) {
         var curNode = myQuestion.children[i];
         curNode.childNodes[1].innerHTML = capitalise(data.quizcontent[curPage]["a"+(i+1)]);
@@ -238,3 +242,4 @@ function capitalise(str) {
 }
 
 </script>  
+
