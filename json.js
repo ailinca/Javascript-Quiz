@@ -1,5 +1,5 @@
 data = {"quizcontent": [
-    {"question": "Cati membrii are formatia Parazitii?","image": "meta/intr1.jpg",  "correct": 2, "a1":"2", "a2":"3","a3":"4","a4":"sin(pi/2)"},
+    {"question": "Cati membrii are formatia Parazitii?","image": "meta/intr1.png",  "correct": 2, "a1":"2", "a2":"3","a3":"4","a4":"sin(pi/2)"},
     {"question": "Care este numele real al lui Freakadadisk?","image": "meta/intr2.jpg", "correct": 3, "a1":"Catalin Stefan Ion", "a2":"Bogdan Ionut Pastaca","a3":"Petre Urda","a4":"Vlad Irimia"},
 	{"question": "Ce vrea sa dea Cheloo?", "image": "meta/intr3.jpg", "correct": 3, "a1":"Bani la saraci", "a2":"Ortul popii","a3":"bani falsi de pomana","a4":"de baut"},
 	{"question": "De unde ne dedica Ombladon aceasta balada?","image": "meta/intr4.jpg", "correct": 1, "a1":"din coltul blocului", "a2":"din Pantelimon","a3":"din una in alta","a4":"din parnaie"},
